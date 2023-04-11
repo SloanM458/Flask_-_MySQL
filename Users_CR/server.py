@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/") #First page
 def initial():
-    return redirect("/users")
+    return render_template("read_all.html")
 
 @app.route("/users") #to look at all the users in db
 def all_users():
