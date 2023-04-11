@@ -26,8 +26,8 @@
             { % for user in users %}
             <tr class="border border-2 dark">
                 <td>{{user.id}}</td>
-                <td>{{user.first_name}} {{user.last_name}}</td>
-                <!-- <td> {{user.last_name}} </td> -->
+                <td>{{user.first_name}} {{user.last_name}}</td> 
+                <!-- Combining first/last name is done with just a space, not a comma! -->
                 <td> {{user.email}} </td>
                 <td> {{user.created_at}} </td>
             </tr>
